@@ -2,7 +2,6 @@
 #include "esphome/core/log.h"
 #include "esphome/core/version.h"
 #include <cinttypes>
-#include <Arduino.h>
 
 #if ESPHOME_VERSION_CODE >= VERSION_CODE(2025, 12, 0)
 #define ADDR_STR(x) x
