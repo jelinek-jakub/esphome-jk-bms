@@ -645,7 +645,7 @@ void JkBmsBle::assemble(const uint8_t *data, uint16_t length) {
     if (computed_crc != remote_crc) {
       ESP_LOGW(TAG, "CRC check failed! 0x%02X != 0x%02X", computed_crc, remote_crc);
       this->frame_buffer_.clear();
-      ESP.restart();
+      esp_restart();
       return;
     }
 
